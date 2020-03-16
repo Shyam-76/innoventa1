@@ -36,4 +36,8 @@ export class GroupsService
     addGroup(group: Group): Promise<DocumentReference> {
         return this.groupsCollection.add(group);
     }
+    // getGroupById(id:Number):
+    // {
+    //     return this.groups
+    // }
 }
