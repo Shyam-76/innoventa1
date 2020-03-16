@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-col class="ion-align-self-center">
+      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+      <div align='center'>
+      <ion-title >
+        INNOVENTA
+      </ion-title>
+      </div>
+    </ion-col>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div align='center'>
+    <img  src="assets/icon/img.png" alt="">
+  </div>
+  <h4 text-center margin-top>Insert your credentials</h4>
+
+  <ion-item>
+    <ion-label position="floating">Email Address</ion-label>
+    <ion-input type="text" name="email" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" name="pass" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+  <div text-center margin-top>
+    <ion-button margin-right  color="secondary" (click)="login()">
+      SIGN IN
+    </ion-button>
+    
+  </div>
+</ion-content>

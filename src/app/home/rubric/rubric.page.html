@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>rubric</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item class="ion-margin">
+    Rubric 1:
+    <ion-range [(ngModel)] = "range1Value" min="1" max="10" step="1" snaps="true" color="secondary">
+      <ion-icon slot = "start" name="close-circle-outline"></ion-icon>
+      <ion-icon slot = "end" name="checkmark-circle-outline"></ion-icon>
+    </ion-range>
+    {{ range1Value }}
+  </ion-item>
+  <ion-item class="ion-margin">
+    Rubric 2:
+    <ion-range [(ngModel)] = "range2Value" min="1" max="10" step="1" snaps="true" color="secondary">
+      <ion-icon slot = "start" name="close-circle-outline"></ion-icon>
+      <ion-icon slot = "end" name="checkmark-circle-outline"></ion-icon>
+    </ion-range>
+    {{ range2Value }}
+  </ion-item>
+  <div text-center margin-top margin-end float-right>
+    <ion-button margin-right  color="success" (click)="onSubmit()">
+      Submit
+    </ion-button>
+  </div>
+</ion-content>
